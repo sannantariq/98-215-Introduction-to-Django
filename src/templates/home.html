@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <style>
-body {background-color:yellow;}
-p {color:blue;}
+body {background-color:white;}
+p {color:block;}
 </style>
+
+<form method = 'POST' action = ''>{% csrf_token %}
+	{{form.as_p}}
+	<input type = 'submit' name = 'button1' value = 'Submit'> </input>
+</form>
+
 <h1> Hello </h1>
-<h1> {{variable1}} </h1>
-<body>
-{{variable2}}
-{{variable3}}</body>
 </html>
